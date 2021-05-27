@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form data diri</title>
+</head>
+
+<body>
+    <h1>Form Data</h1>
+    <form action="Page2.html">
+        <fieldset>
+            <legend>Pernonal information</legend>
+
+            <p>
+                <label for="name">Firstname:
+                    <input type="text" name="name" >
+                </label>
+                <!-- pattern="http?://.+" -->
+            </p>
+            <p>
+                <label for="name">Lastname:
+                    <input type="text" name="name" required>
+                </label></br>
+            </p>
+            <p>
+                <label for="email">Email Address:
+                    <input type="email" name="email">
+                </label></br>
+            </p>
+            <p>
+                <label for="gender">Gender: </label></br>
+                <input type="radio" name="gender" id="male-radio">
+                <label for="male-radio">Male</label>
+                <input type="radio" name="gender" id="female-radio">
+                <label for="female-radio">Female</label></br>
+            </p>
+            <p>
+                <label for="status">Maritial Status:</label></br>
+                <input type="checkbox" name="status" id="single-checkbox" value="single">
+                <label for="single-checkbox">Single</label>
+                <input type="checkbox" name="status" id="maried-checkbox" value="maried">
+                <label for="maried-checkbox">Maried</label>
+                <input type="checkbox" name="status" id="divorced-checkbox" value="divorced">
+                <label for="divorced-checkbox">Divorced</label></br>
+            </p>
+
+            <label for="bio">bio: </label>
+            <p>
+                <textarea name="bio" id="" cols="50" rows="5"></textarea>
+            </p>
+            <input type="submit" value="Send">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
